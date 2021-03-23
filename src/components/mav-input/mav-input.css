@@ -1,0 +1,71 @@
+:host {
+  display: block;
+}
+
+.mav-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.field-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff 0 0 no-repeat padding-box;
+  border: 1px solid #737373;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.field-control.is-disabled {
+  border: 1px solid #bbb;
+}
+
+input {
+  color: #bbb;
+}
+
+.svg {
+  fill: #bbb;
+}
+
+
+input {
+  background: transparent;
+  border: none;
+  color: #707070;
+  letter-spacing: 0;
+  padding: 0 8px 0 16px;
+  width: 100%;
+  height: 32px;
+}
+
+.input:focus{
+   outline: none;
+ }
+
+.prepend-outer {
+  margin-right: 8px;
+}
+
+.append-outer {
+  margin-left: 8px;
+}
+
+label {
+  margin: 8px 0;
+  color: #737373;
+  text-transform: capitalize;
+}
+/*to style the slot element from inside the component itself use slotted */
+::slotted(svg) {
+  width: 10px;
+  height: 10px;
+  margin-right: 16px;
+}
